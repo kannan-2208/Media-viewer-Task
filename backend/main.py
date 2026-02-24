@@ -16,7 +16,7 @@ app.add_middleware(
 )
 Base.metadata.create_all(bind=engine)
 
-app.mount("/media", StaticFiles(directory="media"), name="media")
+app.mount("/media", StaticFiles(directory="backend/media"), name="media")
 @app.get("/api/videos")
 def get_videos():
     db = SessionLocal()
