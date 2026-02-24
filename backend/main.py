@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from database import engine, Base, SessionLocal
+from backend.database import engine, Base, SessionLocal
 import models
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
